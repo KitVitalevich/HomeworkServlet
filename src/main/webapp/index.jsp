@@ -20,7 +20,7 @@
     <div class="task-block">
       <h2>Task 2</h2>
 
-      <form action="MaxNumber" method="GET">
+      <form action="Max" method="GET">
         <p>Введите числа для сравнения:</p>
         <input type="text" name="number1"><br><br>
         <input type="text" name="number2"><br><br>
@@ -61,9 +61,6 @@
         <input type="submit" value="Выполнить">
       </form>
     </div>
-
-
-
 
   </body>
 
