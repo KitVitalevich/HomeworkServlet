@@ -1,6 +1,6 @@
 package com.babiy.homeworkservlet;
 
-public class ActionNumber {
+public class NumberProcessor {
 
     public double max(double numberA, double numberB, double numberC) {
         double result = Math.max(numberA, Math.max(numberB, numberC));

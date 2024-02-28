@@ -8,9 +8,9 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet(name = "Max", value = "/Max")
-public class Max extends HttpServlet {
+public class MaxNumber extends HttpServlet {
 
-    ActionNumber actionNumber = new ActionNumber();
+    NumberProcessor numberProcessor = new NumberProcessor();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -19,7 +19,7 @@ public class Max extends HttpServlet {
         int number2 = Integer.parseInt(req.getParameter("number2"));
         int number3 = Integer.parseInt(req.getParameter("number3"));
 
-        double max = actionNumber.max(number1, number2, number3);
+        double max = numberProcessor.max(number1, number2, number3);
 
         resp.getWriter().println(number1);
         resp.getWriter().println(number2);
